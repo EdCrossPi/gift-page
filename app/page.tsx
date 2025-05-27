@@ -35,10 +35,15 @@ export default function Home() {
         </ul>
       </nav>
 
-      {/* Seção hero */}
       <div className="all-sections">
+        {/* Seção hero */}
         <section className="hero">
           <div className="hero-overlay">
+            <img
+              src="/gift-bg.jpg"
+              alt="Fundo da Seção Hero"
+              className="bg-img"
+            />
             <h1 style={{ color: "white" }}>
               Bem-vindos <br />à nossa lista
             </h1>

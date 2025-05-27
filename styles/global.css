@@ -1601,27 +1601,23 @@ footer h2 {
 }
 
 /* --- HERO IMAGE --- */
-.all-sections {
-  background-image: none; /* remove duplicidade */
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-}
 
-.all-sections::before {
-  content: "";
-  position: absolute;
+.bg-img {
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url("/gift-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
   z-index: -1;
+  pointer-events: none;
+}
+
+/* Fixo no desktop */
+@media (min-width: 601px) {
+  .all-sections::before {
+    position: fixed;
+  }
 }
 
 .hero {
