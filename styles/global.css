@@ -1632,12 +1632,6 @@ footer h2 {
   }
 }
 
-/* Corrige problema do iPhone sem causar zoom no desktop */
-@media (max-width: 600px) {
-  .all-sections::before {
-    transform: scale(1.1); /* aplica zoom só no mobile */
-  }
-}
 .hero {
   /* Configuração padrão (desktop) */
   background-size: cover;
