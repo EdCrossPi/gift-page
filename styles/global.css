@@ -542,12 +542,19 @@ a:hover {
   width: 33.33vw;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Ajuste para telas pequenas (mobile) */
 @media (max-width: 768px) {
   .timeline-img {
-    width: 100vw; /* ocupa toda a largura */
+    width: 100vw;
+    height: 40vh;
+
+    /* Opcional: ajustar proporção no iPhone */
+    background-size: cover; /* Ou "contain" para ver a imagem completa */
+    background-position: top center; /* Pode ajustar para evitar o zoom em áreas irrelevantes */
+    background-attachment: scroll; /* Corrige bugs de scroll/zoom em Safari */
   }
 }
 
