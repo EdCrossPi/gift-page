@@ -1604,8 +1604,8 @@ footer h2 {
 .hero {
   /* Configuração padrão (desktop) */
   background-image: url("/gift-bg.jpg");
-  background-size: cover;
-  background-position: top center;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll; /* Pode causar problemas no mobile */
   height: 100vh;
