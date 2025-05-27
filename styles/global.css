@@ -1603,7 +1603,7 @@ footer h2 {
 /* --- HERO IMAGE --- */
 .all-sections {
   background-image: url("/gift-bg.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Isso fará com que a imagem de fundo fixe na viewport */
