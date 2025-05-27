@@ -1603,7 +1603,7 @@ footer h2 {
 /* --- HERO IMAGE --- */
 .all-sections {
   background-image: url("/gift-bg.jpg");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed; /* Isso fará com que a imagem de fundo fixe na viewport */
@@ -1611,6 +1611,7 @@ footer h2 {
   margin: 0; /* Remova margens padrão do body se houver */
   padding: 0; /* Remova paddings padrão do body se houver */
 }
+
 .hero {
   /* Configuração padrão (desktop) */
   background-size: cover;
