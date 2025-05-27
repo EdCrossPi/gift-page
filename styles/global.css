@@ -1601,18 +1601,26 @@ footer h2 {
 }
 
 /* --- HERO IMAGE --- */
-.hero {
-  /* Configuração padrão (desktop) */
+.all-sections {
   background-image: url("/gift-bg.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll; /* Pode causar problemas no mobile */
+  background-attachment: fixed; /* Isso fará com que a imagem de fundo fixe na viewport */
+  min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
+  margin: 0; /* Remova margens padrão do body se houver */
+  padding: 0; /* Remova paddings padrão do body se houver */
+}
+.hero {
+  /* Configuração padrão (desktop) */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
   z-index: 0;
 }
-
 .hero-overlay {
   /* Seu overlay permanece o mesmo */
   background: linear-gradient(
@@ -1681,7 +1689,6 @@ footer h2 {
 /* Responsivo para tablets */
 @media (max-width: 1024px) {
   .cards-section {
-    background-image: url("/gift-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

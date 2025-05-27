@@ -36,55 +36,57 @@ export default function Home() {
       </nav>
 
       {/* Seção hero */}
-      <section className="hero">
-        <div className="hero-overlay">
-          <h1 style={{ color: "white" }}>
-            Bem-vindos <br />à nossa lista
-          </h1>
-          <a
-            href="#presentes"
-            className="cta-button"
-            onClick={(e) => {
-              e.preventDefault();
-              const el = document.getElementById("presentes");
-              if (el) {
-                el.scrollIntoView({ behavior: "smooth" });
-              }
-            }}
-          >
-            Ver Presentes
-          </a>
-        </div>
-      </section>
+      <div className="all-sections">
+        <section className="hero">
+          <div className="hero-overlay">
+            <h1 style={{ color: "white" }}>
+              Bem-vindos <br />à nossa lista
+            </h1>
+            <a
+              href="#presentes"
+              className="cta-button"
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.getElementById("presentes");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
+              Ver Presentes
+            </a>
+          </div>
+        </section>
 
-      {/* Seção presentes - adicionar margin-top para navbar fixa */}
+        {/* Seção presentes - adicionar margin-top para navbar fixa */}
 
-      <section id="presentes" className="cards-section">
-        <div className="gift-card">
-          <img
-            src="/presentes/pix.jpg"
-            alt="Chave Pix"
-            className="gift-image"
-          />
-          <h3>
-            Pix do noivo (porque se for da noiva, ela gasta tudo na
-            &rsquo;FARM&rsquo;acia)
-          </h3>
+        <section id="presentes" className="cards-section">
+          <div className="gift-card">
+            <img
+              src="/presentes/pix.jpg"
+              alt="Chave Pix"
+              className="gift-image"
+            />
+            <h3>
+              Pix do noivo (porque se for da noiva, ela gasta tudo na
+              &rsquo;FARM&rsquo;acia)
+            </h3>
 
-          <button
-            className="presentear-btn"
-            onClick={() => {
-              navigator.clipboard.writeText(pixKey);
-              alert("Chave Pix copiada!");
-            }}
-          >
-            Copiar Chave Pix
-          </button>
-        </div>
-        {presentes.map((p) => (
-          <GiftCard key={p.id} {...p} />
-        ))}
-      </section>
+            <button
+              className="presentear-btn"
+              onClick={() => {
+                navigator.clipboard.writeText(pixKey);
+                alert("Chave Pix copiada!");
+              }}
+            >
+              Copiar Chave Pix
+            </button>
+          </div>
+          {presentes.map((p) => (
+            <GiftCard key={p.id} {...p} />
+          ))}
+        </section>
+      </div>
     </>
   );
 }
