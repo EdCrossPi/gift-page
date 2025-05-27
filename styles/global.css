@@ -1654,7 +1654,7 @@ footer h2 {
   background-attachment: fixed;
   padding: 4rem 2rem;
   display: grid;
-  grid-template-columns: repeat(5, minmax(250px, 1fr));
+  grid-template-columns: repeat(5, minmax(100px, 1fr));
   gap: 2rem;
   min-height: 60vh;
 
@@ -1680,7 +1680,7 @@ footer h2 {
     background-attachment: fixed;
     padding: 4rem 2rem;
     display: grid;
-    grid-template-columns: repeat(2, minmax(1200px, 1fr));
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
     gap: 2rem;
     min-height: 60vh;
 
@@ -1701,7 +1701,7 @@ footer h2 {
 @media (max-width: 600px) {
   .cards-section {
     padding: 1rem;
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, minmax(10px, 1fr));
     gap: 1rem;
   }
 }

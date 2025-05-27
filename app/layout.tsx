@@ -12,10 +12,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br">
-      <head />
-      <body className="invite-page nav-invite">{children}</body>
-      <link rel="icon" href="/wedding-rings.png" type="image/x-icon" />
+    <>
+      <html lang="pt-br">
+        <head />
+        <body className="invite-page nav-invite">{children}</body>
+        <link rel="icon" href="/wedding-rings.png" type="image/x-icon" />
+      </html>
       <footer>
         <h2>Feito pelo noivo 🤎</h2> <br />
         <div className="text">
@@ -25,6 +27,6 @@ export default function RootLayout({
           </a>
         </div>
       </footer>
-    </html>
+    </>
   );
 }
