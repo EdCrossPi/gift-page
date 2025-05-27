@@ -1,0 +1,45 @@
+type PriceToLinkMap = {
+  [price: number]: string; // Define que as chaves são números e os valores são strings
+};
+
+export const paymentLinks: PriceToLinkMap = {
+  95: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-ERd0V1KLb-95,00",
+  100: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-100,00",
+  120: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-cWLWcWfKJ-120,00",
+  140: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-LfRdpGHib-140,00",
+  150: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-5ahA8E6fLZ-150,00",
+  155: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-LfRmjtDj3-155,00",
+  160: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-17L2CqSxBr-160,00",
+  170: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-1rZ3mDYL4J-170,00",
+  180: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-2nLaohxcYV-180,00",
+  200: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-vmWznYhLH-200,00",
+  220: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-1OfnZR4GHx-220,00",
+  230: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-5ahCf5kLrN-230,00",
+  240: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-17L2aNq3vt-240,00",
+  249: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-5ahDG4sKlv-249,00",
+  250: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-Dro8nDYC7-250,00",
+  260: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-5ahDpd9WJX-260,00",
+  280: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-17L2qip2pr-280,00",
+  290: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-StGjqiOuJ-290,00",
+  300: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-1NyosjHZ7-300,00",
+  330: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-StGn2HLVv-330,00",
+  350: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-1rZ5FztvZR-350,00",
+  380: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-N714Pmcsb-380,00",
+  400: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-5ahGO1NOYv-400,00",
+  450: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-2nLdKP3AxN-450,00",
+  500: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-1rZ5fHz6Bz-500,00",
+  600: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-1OfosRk9a3-600,00",
+  700: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-2nLduXtTjX-700,00",
+  900: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-HKlP6qwjR-900,00",
+  1000: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-2nLeC7X69J-1000,00",
+  1500: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-6Q3nI6Jpd-1500,00",
+  1800: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-JGBPeU8vn-1800,00",
+  1900: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-2nLeute3Ln-1900,00",
+  2000: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-YfX3F3Uhv-2000,00",
+  2500: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-2nLfQ9jAf9-2500,00",
+  2800: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-5mFqrDNmL-2800,00",
+  3000: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-17L4Hin8aR-3000,00",
+  3100: "https://pay.infinitepay.io/ana-bia-lira/Ri1D-hKuxsbvmJ-3100,00",
+};
+
+export const pixKey = "eduardoxpimentel@gmail.com";
