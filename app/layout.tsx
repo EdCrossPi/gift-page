@@ -16,6 +16,15 @@ export default function RootLayout({
       <head />
       <body className="invite-page nav-invite">{children}</body>
       <link rel="icon" href="/wedding-rings.png" type="image/x-icon" />
+      <footer>
+        <h2>Feito pelo noivo 🤎</h2> <br />
+        <div className="text">
+          Foto por:{" "}
+          <a href="https://www.instagram.com/orafaelmaiaa/" className="text">
+            @orafaelmaiaa
+          </a>
+        </div>
+      </footer>
     </html>
   );
 }
