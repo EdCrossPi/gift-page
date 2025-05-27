@@ -538,22 +538,21 @@ a:hover {
 
 .timeline-img {
   background-image: url("/anel_noivado.jpg");
-  height: 70vh;
-  width: 33.33vw;
-  background-position: center;
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
+  width: 33.33vw;
+  height: 70vh;
 }
 
-/* Ajuste para telas pequenas (mobile) */
 @media (max-width: 768px) {
   .timeline-img {
-    width: 100vw;
-    height: 40vh;
-
-    background-size: contain; /* Ou "contain" para ver a imagem completa */
-    background-position: top center; /* Pode ajustar para evitar o zoom em áreas irrelevantes */
-    background-attachment: scroll; /* Corrige bugs de scroll/zoom em Safari */
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
   }
 }
 
