@@ -3,6 +3,7 @@
 import Script from "next/script";
 import GiftCard from "../components/gift-card";
 import { presentes } from "../data/presentes";
+import { pixKey } from "../data/paymentLinks";
 
 export default function Home() {
   return (
@@ -66,12 +67,14 @@ export default function Home() {
             className="gift-image"
           />
           <h3>
-            Pix do noivo (porque se for da noiva, ela gasta tudo na 'FARM'acia)
+            Pix do noivo (porque se for da noiva, ela gasta tudo na
+            &rsquo;FARM&rsquo;acia)
           </h3>
+
           <button
             className="presentear-btn"
             onClick={() => {
-              navigator.clipboard.writeText("eduardoxpimentel@gmail.com");
+              navigator.clipboard.writeText(pixKey);
               alert("Chave Pix copiada!");
             }}
           >
