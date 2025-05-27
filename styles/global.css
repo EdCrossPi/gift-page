@@ -1606,12 +1606,32 @@ footer h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Isso fará com que a imagem de fundo fixe na viewport */
   min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
   margin: 0; /* Remova margens padrão do body se houver */
   padding: 0; /* Remova paddings padrão do body se houver */
+  position: relative;
+  overflow: hidden;
 }
 
+.all-sections::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/gift-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1; /* atrás do conteúdo */
+  transform: scale(1.1); /* para evitar espaços nas bordas */
+}
+@media (min-width: 601px) {
+  .all-sections::before {
+    position: fixed;
+  }
+}
 .hero {
   /* Configuração padrão (desktop) */
   background-size: cover;
@@ -1668,7 +1688,6 @@ footer h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   padding: 4rem 4rem;
   display: grid;
   grid-template-columns: repeat(4, minmax(50px, 1fr));
