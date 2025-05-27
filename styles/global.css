@@ -539,7 +539,7 @@ a:hover {
 .timeline-img {
   background-image: url("/anel_noivado.jpg");
   background-size: cover;
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
   width: 33.33vw;
   height: 70vh;
@@ -547,12 +547,11 @@ a:hover {
 
 @media (max-width: 768px) {
   .timeline-img {
-    width: 100%;
-    aspect-ratio: 3 / 2;
+    width: 100vw;
+    aspect-ratio: 2 / 3; /* respeita a proporção da imagem original */
     height: auto;
     background-size: cover;
-    background-position: center center;
-    background-attachment: scroll;
+    background-position: top center;
   }
 }
 
