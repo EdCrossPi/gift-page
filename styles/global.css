@@ -1605,15 +1605,13 @@ footer h2 {
   /* Configuração padrão (desktop) */
   background-image: url("/gift-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Pode causar problemas no mobile */
+  background-attachment: scroll; /* Pode causar problemas no mobile */
   height: 100vh;
   position: relative;
   z-index: 0;
 }
-
-/* Ajuste para mobile (telas estreitas e orientação vertical) */
 
 .hero-overlay {
   /* Seu overlay permanece o mesmo */
