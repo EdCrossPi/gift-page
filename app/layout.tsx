@@ -15,6 +15,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <head />
       <body className="invite-page nav-invite">{children}</body>
+      <link rel="icon" href="/wedding-rings.png" type="image/x-icon" />
     </html>
   );
 }
