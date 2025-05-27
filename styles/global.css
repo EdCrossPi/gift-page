@@ -548,10 +548,11 @@ a:hover {
 @media (max-width: 768px) {
   .timeline-img {
     width: 100vw;
-    aspect-ratio: 2 / 3; /* respeita a proporção da imagem original */
-    height: auto;
-    background-size: cover;
-    background-position: top center;
+    aspect-ratio: 3 / 4; /* respeita a proporção da imagem original */
+    height: 60vh;
+    background-size: contain; /* muda para contain para ver a imagem inteira */
+    background-position: center;
+    object-fit: cover; /* garante que a proporção seja mantida */
   }
 }
 
