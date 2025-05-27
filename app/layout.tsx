@@ -17,8 +17,8 @@ export default function RootLayout({
         <head />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
-        ></meta>
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+        />
         <body className="invite-page nav-invite">{children}</body>
         <link rel="icon" href="/wedding-rings.png" type="image/x-icon" />
       </html>

@@ -539,21 +539,22 @@ a:hover {
 .timeline-img {
   background-image: url("/anel_noivado.jpg");
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
   width: 33.33vw;
   height: 70vh;
 }
 
+/* Ajuste ESPECÍFICO para iPhone e dispositivos móveis */
 @media (max-width: 768px) {
   .timeline-img {
-    width: 100vw;
-    height: 60vh; /* altura fixa */
-    max-height: -webkit-fill-available; /* corrige para Safari iOS */
-    aspect-ratio: 3/4; /* opcional - pode remover se conflitar */
-    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    max-height: -webkit-fill-available; /* Corrige vh no Safari iOS */
+    aspect-ratio: 2/3; /* Proporção original da imagem (4082x6123) */
+    background-size: contain; /* Mostra a imagem inteira sem cortes */
     background-position: center;
-    -webkit-background-size: cover; /* específico para Safari */
+    -webkit-background-size: contain; /* Força no Safari */
   }
 }
 
@@ -1608,17 +1609,29 @@ footer h2 {
 
 /* --- HERO IMAGE --- */
 .hero {
+  /* Configuração padrão (desktop) */
   background-image: url("/gift-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Pode causar problemas no mobile */
   height: 100vh;
   position: relative;
   z-index: 0;
 }
 
+/* Ajuste para mobile (telas estreitas e orientação vertical) */
+@media (max-width: 768px), (orientation: portrait) {
+  .hero {
+    background-image: url("/anel_noivado.jpg"); /* Imagem vertical */
+    background-attachment: scroll; /* Remove fixed para evitar bugs no iOS */
+    background-size: cover; /* ou "contain" se quiser ver a imagem inteira */
+    background-position: top center; /* Ajuste conforme necessário */
+  }
+}
+
 .hero-overlay {
+  /* Seu overlay permanece o mesmo */
   background: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.2) 0%,
@@ -1634,7 +1647,6 @@ footer h2 {
   align-items: center;
   padding: 2rem;
   text-align: center;
-  color: white;
 }
 
 .hero-overlay h1 {
