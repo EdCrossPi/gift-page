@@ -1602,13 +1602,10 @@ footer h2 {
 
 /* --- HERO IMAGE --- */
 .all-sections {
-  background-image: url("/gift-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da viewport */
-  margin: 0; /* Remova margens padrão do body se houver */
-  padding: 0; /* Remova paddings padrão do body se houver */
+  background-image: none; /* remove duplicidade */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
   position: relative;
   overflow: hidden;
 }
@@ -1624,12 +1621,21 @@ footer h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1; /* atrás do conteúdo */
-  transform: scale(1.1); /* para evitar espaços nas bordas */
+  z-index: -1;
+  transform: scale(1); /* normal no desktop */
 }
+
+/* Fixo no desktop */
 @media (min-width: 601px) {
   .all-sections::before {
     position: fixed;
+  }
+}
+
+/* Corrige problema do iPhone sem causar zoom no desktop */
+@media (max-width: 600px) {
+  .all-sections::before {
+    transform: scale(1.1); /* aplica zoom só no mobile */
   }
 }
 .hero {
