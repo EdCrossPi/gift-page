@@ -913,6 +913,8 @@ footer {
   width: 100%;
   background-color: var(--grey-color);
   padding: 5vh 30px;
+  position: relative;
+  z-index: 10;
 }
 footer h2 {
   font-size: 2Srem;
