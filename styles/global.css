@@ -1622,14 +1622,6 @@ footer h2 {
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1;
-  transform: scale(1); /* normal no desktop */
-}
-
-/* Fixo no desktop */
-@media (min-width: 601px) {
-  .all-sections::before {
-    position: fixed;
-  }
 }
 
 .hero {
