@@ -1623,7 +1623,7 @@ footer h2 {
 /* Ajuste para mobile (telas estreitas e orientação vertical) */
 @media (max-width: 768px), (orientation: portrait) {
   .hero {
-    background-image: url("/anel_noivado.jpg"); /* Imagem vertical */
+    background-image: url("/gift-bg.jpg"); /* Imagem vertical */
     background-attachment: scroll; /* Remove fixed para evitar bugs no iOS */
     background-size: cover; /* ou "contain" se quiser ver a imagem inteira */
     background-position: top center; /* Ajuste conforme necessário */
