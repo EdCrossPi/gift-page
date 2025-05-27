@@ -1680,17 +1680,6 @@ footer h2 {
   grid-template-columns: repeat(4, minmax(50px, 1fr));
   gap: 2rem;
   min-height: 60vh;
-
-  /* Efeito vidro fosco */
-  background-color: rgba(255, 255, 255, 0.4); /* Mais sutil */
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-
-  /* Remoção de borda visível */
-  border-radius: 0;
-  border: none;
-  box-shadow: none;
-  margin: 0;
 }
 
 /* Responsivo para tablets */
