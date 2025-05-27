@@ -66,7 +66,7 @@ export default function Home() {
             className="gift-image"
           />
           <h3>
-            Pix do noivo (porque se for da noiva, ela gasta tudo na 'FARM'ácia)
+            Pix do noivo (porque se for da noiva, ela gasta tudo na 'FARM'acia)
           </h3>
           <button
             className="presentear-btn"
