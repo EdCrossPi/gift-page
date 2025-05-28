@@ -501,14 +501,6 @@ export const presentes: Presente[] = [
     categoria: "Casa e Manutenção",
   },
   {
-    id: 63,
-    title: "Depurador de ar",
-    price: 330,
-    imageUrl:
-      "https://a-static.mlcdn.com.br/800x600/depurador-de-ar-coifa-de-fogao-para-cozinha-suggar-slim-80cm/construartutilidades/8273-va2/5044bb6ef91834ba7a37431818685e84.jpeg",
-    categoria: "Cozinha",
-  },
-  {
     id: 64,
     title: "Vasos Decorativos",
     price: 280,
